@@ -1,0 +1,1321 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.onto-med.de/ontologies/biopass-core.owl#"
+     xml:base="http://www.onto-med.de/ontologies/biopass-core.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:bison-core="http://www.onto-med.de/ontologies/bison-core.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:biopass-core="http://www.onto-med.de/ontologies/biopass-core.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.onto-med.de/ontologies/bison-core.owl">
+        <owl:imports rdf:resource="http://www.onto-med.de/ontologies/gfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#categorial_role_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#categorial_role_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_categorial_part"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#role_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#categorial_spatial_follower_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#categorial_spatial_follower_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_categorial_part"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#defines_categorial_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#defines_categorial_role">
+        <rdfs:subPropertyOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_categorial_part"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#defines_role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#defines_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#defines_role">
+        <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#role_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by">
+        <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#instances_play_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#instances_play_role"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
+        <rdfs:domain rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Material_Continuant"/>
+        <rdfs:range rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Material_Continuant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows">
+        <rdfs:domain rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Presential"/>
+        <rdfs:range rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Presential"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#caused_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#caused_by"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#exhibits -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#exhibits">
+        <rdfs:domain rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Material_Continuant"/>
+        <rdfs:range rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Presential"/>
+        <dc:description>In the GFO-account of persistence, perpetuants exhibit presentials, i.e., the former ``exist through&apos;&apos; the latter at the time where the presential exists. With respect to persistants, presentials instantiate persistants.
+[FL, 2008-07-10]</dc:description>
+        <rdfs:label xml:lang="en">exhibits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#has_categorial_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_categorial_part">
+        <rdfs:isDefinedBy rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_categorial_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_part"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#has_property -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_property"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#instance_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#instance_of"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#plays_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#plays_role"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#role_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#role_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/biopass-example.owl#has_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.onto-med.de/ontologies/biopass-example.owl#has_timestamp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Timestamp"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#has_decimal_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#has_decimal_value">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Decimal_property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/biopass-example.owl#Direction_change -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/biopass-example.owl#Direction_change">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Instantanuous_change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_concept -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_concept">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_landmark_structure -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_landmark_structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#plays_role"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_landmark"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#role_of"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_intervention"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Material_Continuant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#instance_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_concept"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_risk_structure -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_risk_structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#plays_role"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_risk_structure"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#role_of"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_intervention"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Material_structure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Material_structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Movement"/>
+        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Current_situation -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Decimal_property -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Decimal_property">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#has_decimal_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Distance_to_entrance -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Distance_to_entrance">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Decimal_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Distance_to_preceeding_situation -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Distance_to_preceeding_situation">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Decimal_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Movement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Image_concept -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Image_concept">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Image_property -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Image_property">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#instance_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Image_concept"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Last_situation -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Movement -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Movement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Discrete_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Situation"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty>
+                                                    <rdf:Description>
+                                                        <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                                                    </rdf:Description>
+                                                </owl:onProperty>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Possibly_occurring_anatomical_object -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Possibly_occurring_anatomical_object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Risk_situation -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Risk_situation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_risk_structure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Role_concept -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Role_concept">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Situation_caused_by_direction_change -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Situation_caused_by_direction_change">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#caused_by"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/biopass-example.owl#Direction_change"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Situation_participating_in_backwards_movement -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Situation_participating_in_backwards_movement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Situation_participating_in_forwards_movement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Situation_participating_in_forwards_movement -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Situation_participating_in_forwards_movement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Surgical_intervention -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_intervention">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Situoid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Surgical_landmark -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_landmark">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Surgical_risk_structure -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_risk_structure">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Time_since_beginning -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Time_since_beginning">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Decimal_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Timestamp -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Timestamp">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/biopass-example.owl#has_timestamp"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Concept -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Concept"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Concrete -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Concrete"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Discrete_process -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Discrete_process"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Instantanuous_change -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Instantanuous_change"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Material_Continuant -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Material_Continuant">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concrete"/>
+        <dc:description>A material continuant is a concrete individual which persists through time and exhibits material structures.</dc:description>
+        <rdfs:label xml:lang="en">Material_continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Material_structure -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Material_structure"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Presential -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Presential"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Processual_role -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Processual_role"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Property -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Situation"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Situoid -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Situoid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#constituent_part_of"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#plays_role"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_risk_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#role_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_intervention"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#exhibits"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_risk_structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Current_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_constituent_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_structure"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#exhibited_by"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#caused_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/biopass-example.owl#Direction_change"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#temporally_follows"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Surgical_situation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Forwards_movement"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Backwards_movement"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#caused_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/biopass-example.owl#Direction_change"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
