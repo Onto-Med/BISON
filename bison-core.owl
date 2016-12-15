@@ -451,9 +451,9 @@
     
 
 
-    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object -->
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Last_occurred_anatomical_object -->
 
-    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object">
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Last_occurred_anatomical_object">
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -513,9 +513,9 @@
     
 
 
-    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object -->
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occurred_anatomical_object -->
 
-    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object">
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occurred_anatomical_object">
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -541,9 +541,9 @@
     
 
 
-    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object -->
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_occurred_before_last_anatomical_object -->
 
-    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object">
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurred_before_last_anatomical_object">
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -581,9 +581,9 @@
     
 
 
-    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object -->
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Not_occurring_anatomical_object -->
 
-    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object">
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurring_anatomical_object">
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -609,17 +609,17 @@
     
 
 
-    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object -->
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Occurred_before_last_anatomical_object -->
 
-    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object">
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Occurred_before_last_anatomical_object">
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
     </owl:Class>
     
 
 
-    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object -->
+    <!-- http://www.onto-med.de/ontologies/bison-core.owl#Occurring_anatomical_object -->
 
-    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object">
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Occurring_anatomical_object">
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -647,10 +647,10 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object"/>
+                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurring_anatomical_object"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occurring_anatomical_object"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -948,10 +948,10 @@
                                                     <owl:Class>
                                                         <owl:intersectionOf rdf:parseType="Collection">
                                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurring_anatomical_object"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
-                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occurring_anatomical_object"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -994,10 +994,10 @@
                                                     <owl:Class>
                                                         <owl:intersectionOf rdf:parseType="Collection">
                                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occuring_anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurring_anatomical_object"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
-                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occuring_anatomical_object"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occurring_anatomical_object"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -1034,10 +1034,10 @@
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occurred_anatomical_object"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occurred_anatomical_object"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -1070,10 +1070,10 @@
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occurred_anatomical_object"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occurred_anatomical_object"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -1112,10 +1112,10 @@
                                                     <owl:Class>
                                                         <owl:intersectionOf rdf:parseType="Collection">
                                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occurred_anatomical_object"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
-                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occurred_anatomical_object"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -1158,10 +1158,10 @@
                                                     <owl:Class>
                                                         <owl:intersectionOf rdf:parseType="Collection">
                                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occured_anatomical_object"/>
+                                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_last_occurred_anatomical_object"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
-                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occured_anatomical_object"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Last_occurred_anatomical_object"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -1198,10 +1198,10 @@
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurred_before_last_anatomical_object"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_follows"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occurred_before_last_anatomical_object"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -1234,10 +1234,10 @@
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Anatomical_object"/>
-                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occured_before_last_anatomical_object"/>
+                                            <rdf:Description rdf:about="http://www.onto-med.de/ontologies/bison-core.owl#Not_occurred_before_last_anatomical_object"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#spatially_precedes"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occured_before_last_anatomical_object"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/bison-core.owl#Occurred_before_last_anatomical_object"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
